@@ -14,13 +14,6 @@ const ProfilesBox = () => {
 
 		fetchData()
 	}, [])
-
-	const links = {
-		github: "https://github.com/arashi-u",
-		twitter: "https://twitter.com/_arashi_u_",
-		telegram: "https://t.me/arashi_u",
-		discord: "",
-	}
 	
 	return (
 		<div className="m-10 flex flex-col flex-wrap sm:flex-row justify-center items-center gap-3">
@@ -33,8 +26,7 @@ const ProfilesBox = () => {
 						email={u.email}
 						bio={"Lorem ipsum dolor sit amet consectetur, adipisicing, elit. Amet doloremque, nihil vel, debitis sint velit, dicta ullam laboriosam voluptatum quis quas odit aut molestiae accusantium dolorem nostrum incidunt at eaque"}
 						city={u.location.city}
-						country={u.location.country}
-						links={links}
+						social={{}}
 					/>
 				)
 			})}
