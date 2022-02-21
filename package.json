@@ -1,5 +1,5 @@
 {
-  "name": "sdn-githubs",
+  "name": "sdn-techies",
   "private": true,
   "version": "0.0.0",
   "scripts": {
@@ -14,6 +14,7 @@
     "@fortawesome/free-regular-svg-icons": "^6.0.0",
     "@fortawesome/free-solid-svg-icons": "^6.0.0",
     "@fortawesome/react-fontawesome": "^0.1.17",
+    "axios": "^0.26.0",
     "daisyui": "^2.0.9",
     "express": "^4.17.3",
     "mongoose": "^6.2.2",
