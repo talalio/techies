@@ -13,12 +13,11 @@ const Navbar = () => {
 
 	const theme = localStorage.getItem('theme')
 
-	console.log(theme)
 	return (
 
 		<div className="navbar bg-primary text-primary-content">
 		  <div className="flex-1 px-2 lg:flex-none">
-		    <a className="text-xl mx-2 font-bold uppercase">Developers in sudan</a>
+		    <a className="text-xl mx-2 font-bold uppercase">techies</a>
 		  </div> 
 		  <div className="flex justify-end flex-1 px-2 gap-3">
 		  	<a href="#user-modal" className="btn btn-primary uppercase">join</a>
