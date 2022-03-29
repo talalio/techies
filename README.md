@@ -13,7 +13,12 @@ npm run dev
 ### About
 
 This is a simple web application i've been working on to enhance my skills on the MERN stack which stands for MongoDB, Express, React and Node.
-It's not fully completed you can checkout the backend api at [techies-api](https://github.com/arashi-u/techies-api).
+It's not fully completed you can checkout the backend api at [techies-api](https://github.com/talald3v/techies-api).
+
+### TODO
+
+- [ ] Adding Authentication via github
+- [ ] Adding more pages like profile, maybe a ranking page 
 
 ### Screenshots
 
