@@ -1,31 +1,6 @@
 import axios from 'axios'
 
-const Modal = () => {
-
-	const handleSubmition = (e) => {
-		e.preventDefault()
-
-		const newUser = {
-			fname: e.target.first.value,
-			lname: e.target.last.value,
-			email: e.target.email.value,
-			picture: e.target.picture.value,
-			bio: e.target.bio.value,
-			city: e.target.city.value,
-			social: {
-				github: e.target.github.value,
-				twitter: e.target.twitter.value,
-				discord: e.target.discord.value,
-				telegram: e.target.telegram.value,
-			},
-		}
-
-		const addUser = async (user) => {
-			await axios.post('http://localhost:5000/users/add', user)
-		}
-
-		addUser(newUser)
-	}
+const Modal = ({handleSubmition}) => {
 
 	return (
 		<form action="" onSubmit={(e) => { handleSubmition(e) }}>

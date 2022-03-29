@@ -27,7 +27,7 @@ const Navbar = () => {
 				<FontAwesomeIcon className="swap-off" icon={(theme === 'dark') ? faSun : faMoon} size="2x" />
 			</label>
 			<div className="flex items-stretch">
-		      <a className="btn btn-ghost rounded-btn" href="https://github.com/arashi-u/sdn-githubs" target="_blank">
+		      <a className="btn btn-ghost rounded-btn" href="https://github.com/talald3v/techies" target="_blank">
 		      	<FontAwesomeIcon icon={faGithub} size={"2x"}/>
 		      </a>
 		    </div>
