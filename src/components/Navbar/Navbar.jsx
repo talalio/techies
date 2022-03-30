@@ -21,7 +21,7 @@ const Navbar = () => {
 		    <a className="text-xl mx-2 font-bold uppercase">techies</a>
 		  </div> 
 		  <div className="flex justify-end flex-1 px-2 gap-3">
-		  	<Link to="/login" className="btn btn-primary uppercase">join</Link>
+		  	<Link to="/register" className="btn btn-primary uppercase">join</Link>
 			<label className="swap swap-rotate">
 				<input type="checkbox" data-toggle-theme="dark,light"/>
 				<FontAwesomeIcon className="swap-on" icon={(theme === 'dark') ? faMoon : faSun} size="2x" />
