@@ -1,42 +1,27 @@
 
 import React from 'react'
-import Navbar from './components/Navbar'
-import ProfilesBox from './components/ProfilesBox'
-import Modal from './components/Modal'
+import Navbar from './components/Navbar/Navbar'
+import Home from './components/Home/Home'
+import Login from './components/Login/Login'
+import Register from './components/Register/Register'
+import Rank from './components/Rank/Rank'
+import Footer from './components/Footer/Footer'
+//import axios from 'axios'
 
-const App = () => {
+const App = ({page}) => {
 
-  const handleSubmition = (e) => {
-    e.preventDefault()
-
-    const newUser = {
-      fname: e.target.first.value,
-      lname: e.target.last.value,
-      email: e.target.email.value,
-      picture: e.target.picture.value,
-      bio: e.target.bio.value,
-      city: e.target.city.value,
-      social: {
-        github: e.target.github.value,
-        twitter: e.target.twitter.value,
-        discord: e.target.discord.value,
-        telegram: e.target.telegram.value,
-      },
-    }
-
-    // let it be the localhost for now, just for testing.
-    const addUser = async (user) => {
-      await axios.post('http://localhost:5000/users/add', user)
-    }
-
-    addUser(newUser)
+  const pages = {
+    Home: (<Home/>),
+    Login: (<Login/>),
+    Register: (<Register/>),
+    Rank: (<Rank/>)
   }
 
   return (
     <React.Fragment>
       <Navbar />
-      <Modal handleSubmition={handleSubmition}/>
-      <ProfilesBox />
+      {pages[page]}
+      <Footer/>
     </React.Fragment>
   )
 }
