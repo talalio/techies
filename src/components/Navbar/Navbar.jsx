@@ -18,7 +18,7 @@ const Navbar = () => {
 
 		<div className="navbar bg-primary text-primary-content">
 		  <div className="flex-1 px-2 lg:flex-none">
-		    <a className="text-xl mx-2 font-bold uppercase">techies</a>
+		    <Link to="/" className="text-xl mx-2 font-bold uppercase" >techies</Link>
 		  </div> 
 		  <div className="flex justify-end flex-1 px-2 gap-3">
 		  	<Link to="/register" className="btn btn-primary uppercase">join</Link>
