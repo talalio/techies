@@ -27,9 +27,3 @@ It's not fully completed you can checkout the backend api at [techies-api](https
 
 #### Dark mode
 ![darkmode](./screenshots/dark.png)
-
-#### Light mode modal
-![lightmodal](./screenshots/light-modal.png)
-
-#### Dark mode modal
-![darkmodal](./screenshots/dark-modal.png)
