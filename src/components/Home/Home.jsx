@@ -16,7 +16,7 @@ const Home = () => {
 	}, [])
 	
 	return (
-		<div className="m-10 flex flex-col flex-wrap sm:flex-row justify-center items-center gap-3">
+		<div className="mt-auto flex flex-col flex-wrap sm:flex-row justify-center items-center gap-3">
 			{users.map((u) => {
 				return (
 					<Card

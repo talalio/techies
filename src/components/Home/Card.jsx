@@ -4,7 +4,7 @@ import { faGithub, faTwitter, faDiscord, faTelegram } from '@fortawesome/free-br
 const Card = ({ picture, name, email, city, bio, social}) => {
 
 	return (
-		<div className="m-3 w-fit h-full min-h-272 flex items-center justify-center bg-primary">
+		<div className="m-auto flex items-center justify-center bg-primary">
 		    <div className="relative w-96 h-auto bg-primary rounded-md pt-24 pb-8 px-4 shadow-md hover:shadow-lg transition flex flex-col items-center">
 		        <div className="absolute rounded-full bg-gray-100 w-28 h-28 p-2 z-10 -top-8 shadow-lg hover:shadow-xl transition">
 		            <div className="rounded-full bg-black w-full h-full overflow-auto">
