@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
-import ProfileCard from './ProfileCard'
+import Card from './Card'
 
-const ProfilesBox = () => {
+const Home = () => {
 	const [users, setUsers] = useState([])
 
 	useEffect(() => {
@@ -19,7 +19,7 @@ const ProfilesBox = () => {
 		<div className="m-10 flex flex-col flex-wrap sm:flex-row justify-center items-center gap-3">
 			{users.map((u) => {
 				return (
-					<ProfileCard
+					<Card
 						key={u.login.uuid}
 						picture={u.picture.large} 
 						name={u.name}
@@ -35,4 +35,4 @@ const ProfilesBox = () => {
 }
 
 
-export default ProfilesBox
+export default Home

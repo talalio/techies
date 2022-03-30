@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faTwitter, faDiscord, faTelegram } from '@fortawesome/free-brands-svg-icons'
 
-const ProfileCardExt = ({ picture, name, email, city, bio, social}) => {
+const Card = ({ picture, name, email, city, bio, social}) => {
 
 	return (
 		<div className="m-3 w-fit h-full min-h-272 flex items-center justify-center bg-primary">
@@ -35,4 +35,4 @@ const ProfileCardExt = ({ picture, name, email, city, bio, social}) => {
 
 }
 
-export default ProfileCardExt
+export default Card
