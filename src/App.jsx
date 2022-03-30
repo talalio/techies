@@ -1,4 +1,3 @@
-
 import React from 'react'
 import Navbar from './components/Navbar/Navbar'
 import Home from './components/Home/Home'
@@ -10,10 +9,18 @@ import Footer from './components/Footer/Footer'
 
 const App = ({page}) => {
 
+  const handleRegisteration = (e) => {
+    e.preventDefault()
+  }
+
+  const handleLogin = (e) => {
+    e.preventDefault()
+  }
+
   const pages = {
     Home: (<Home/>),
-    Login: (<Login/>),
-    Register: (<Register/>),
+    Login: (<Login onlogin={handleLogin}/>),
+    Register: (<Register onregister={handleRegisteration}/>),
     Rank: (<Rank/>)
   }
 
