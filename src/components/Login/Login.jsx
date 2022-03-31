@@ -1,7 +1,7 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
-
+import { Link } from 'react-router-dom'
 
 const Login = ({onlogin}) => (
 
@@ -13,6 +13,7 @@ const Login = ({onlogin}) => (
 			<FontAwesomeIcon className="mr-2" icon={faGithub} size="2x"/>
 			Continue with Github
 		</button>
+		<Link className="underline" to="/register">Don't have an account yet ?</Link>
 	</form>
 
 )

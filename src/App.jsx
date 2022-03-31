@@ -1,10 +1,7 @@
 import React from 'react'
 import Navbar from './components/Navbar/Navbar'
-import Home from './components/Home/Home'
-import Login from './components/Login/Login'
-import Register from './components/Register/Register'
-import Rank from './components/Rank/Rank'
 import Footer from './components/Footer/Footer'
+import { Outlet, Link } from 'react-router-dom'
 //import axios from 'axios'
 
 const App = ({page}) => {
@@ -17,17 +14,10 @@ const App = ({page}) => {
     e.preventDefault()
   }
 
-  const pages = {
-    Home: (<Home/>),
-    Login: (<Login onlogin={handleLogin}/>),
-    Register: (<Register onregister={handleRegisteration}/>),
-    Rank: (<Rank/>)
-  }
-
   return (
     <React.Fragment>
-      <Navbar />
-      {pages[page]}
+      <Navbar/>
+        <Outlet/>
       <Footer/>
     </React.Fragment>
   )
