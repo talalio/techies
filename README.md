@@ -21,11 +21,3 @@ It's not fully completed you can checkout the backend api at [techies-api](https
 
 - [ ] Adding Authentication via github
 - [ ] Adding more pages like profile, maybe a ranking page 
-
-### Screenshots
-
-#### Light mode
-![lightmode](./screenshots/light.png)
-
-#### Dark mode
-![darkmode](./screenshots/dark.png)
