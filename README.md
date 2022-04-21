@@ -1,6 +1,8 @@
 ![maintained](https://img.shields.io/badge/Maintained%3F-yes-green.svg?style=for-the-badge)
 ![madewith](https://img.shields.io/badge/Made%20with-React-61DAFB?style=for-the-badge&logo=React)
 
+
+:warning: Decided to redo everything with next, painful but easier than later :warning:
 ## Installation
 
 ```
